@@ -1,3 +1,6 @@
+/**
+ * @author Sotaro Tomikawa
+ */
 export const notificationSupported = !!window.Notification;
 
 export const getNotifPermission = (): Promise<NotificationPermission> => {

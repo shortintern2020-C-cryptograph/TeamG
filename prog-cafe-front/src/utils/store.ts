@@ -7,6 +7,9 @@ import { connect } from './webrtc';
 
 const logWs = `${logColor.magenta}ws${logColor.reset}`;
 
+/**
+ * @author Sotaro Tomikawa
+ */
 // ws event handlers
 const wsOnOpen = (str: Store) => () => {
   console.log(logWs, 'open');
@@ -113,6 +116,9 @@ const wsOnMessage = (str: Store) => (message: MessageEvent) => {
   /* eslint-enable no-param-reassign */
 };
 
+/**
+ * @author Sotaro Tomikawa
+ */
 export class Store {
   loading = false
   ws: WebSocket | null = null
@@ -197,6 +203,9 @@ export class Store {
     });
   }
 
+  /**
+   * @author Kenya Sugimoto
+   */
   sendProgress() {
     if (!this.githubId) return;
     this.wsSend({
@@ -207,6 +216,9 @@ export class Store {
     });
   }
 
+  /**
+   * @author Kenya Sugimoto
+   */
   sendStatus(status: string) {
     if (!this.githubId) return;
     this.wsSend({
@@ -283,6 +295,9 @@ export class Store {
     if (this.audioElement) document.body.removeChild(this.audioElement);
   }
 
+  /**
+   * @author Kenya Sugimoto
+   */
   incrementActiveTime() {
     this.activeTime += 1;
     if (this.activeTime % activeTimeThreshold === 0) {

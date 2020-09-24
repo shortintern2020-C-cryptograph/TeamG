@@ -1,3 +1,6 @@
+/**
+ * @author Sotaro Tomikawa
+ */
 /* eslint-disable @typescript-eslint/camelcase */
 import { endpoint, logColor } from '@/utils/constants';
 
