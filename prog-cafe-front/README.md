@@ -1,5 +1,14 @@
 # prog-cafe-front
 
+This directoy is PROG.CAFE's frontend codes.
+
+Made by
+
+- TOMIKAWA Sotaro
+- SUGIMOTO Kenya
+- WAKUDA Ryoya
+- OKADA Yuka
+
 ## Project setup
 ```
 npm install
@@ -19,6 +28,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
