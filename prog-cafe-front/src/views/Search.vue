@@ -5,6 +5,9 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Sotaro Tomikawa
+ */
 import { Component, Vue } from 'vue-property-decorator';
 import Header from '@/components/global/header/Header.vue';
 import SearchResult from '@/components/searchResults/SearchResults.vue';

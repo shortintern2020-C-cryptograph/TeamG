@@ -6,6 +6,9 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Kenya Sugimoto
+ */
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import MessageList from '@/components/room/status/chatList/chat/content/messageList/MessageList.vue';
 import Form from '@/components/room/status/chatList/chat/content/form/Form.vue';
@@ -22,6 +25,9 @@ export default class Content extends Vue {
 </script>
 
 <style lang="scss" scoped>
+/**
+ * @author Sotaro Tomikawa
+ */
 .content {
   display: grid;
   height: calc(100% - 3em);

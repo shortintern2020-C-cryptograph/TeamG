@@ -7,6 +7,9 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Sotaro Tomikawa
+ */
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import UserIcon from '@/components/global/UserIcon.vue';
 import UserName from '@/components/global/UserName.vue';
@@ -50,6 +53,9 @@ export default class Message extends Vue {
 </script>
 
 <style lang="scss" scoped>
+/**
+ * @author Sotaro Tomikawa
+ */
 .message {
   display: grid;
   margin-bottom: 1em;

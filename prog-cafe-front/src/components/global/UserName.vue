@@ -5,6 +5,9 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Kenya Sugimoto
+ */
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component

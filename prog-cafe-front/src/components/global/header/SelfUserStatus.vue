@@ -9,6 +9,9 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Sotaro Tomikawa
+ */
 import { store } from '@/utils/store';
 import { getAvatarIconUrl } from '@/utils/utils';
 import { Component, Vue } from 'vue-property-decorator';
@@ -25,10 +28,9 @@ export default class SelfUserStatus extends Vue {
     return store.status;
   }
 
-  get path() {
-    return this.$route.params.userId ?? '';
-  }
-
+  /**
+   * @author Kenya Sugimoto
+   */
   toSelfUserProfile() {
     if (this.$route.params.userId !== this.name) this.$router.push({ name: 'User', params: { userId: this.name ?? '' } });
   }
@@ -36,6 +38,9 @@ export default class SelfUserStatus extends Vue {
 </script>
 
 <style lang="scss" scoped>
+/**
+ * @author Sotaro Tomikawa
+ */
 .self-user-status {
   height: 100%;
   display: flex;

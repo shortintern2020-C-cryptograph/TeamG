@@ -8,6 +8,9 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Sotaro Tomikawa
+ */
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
@@ -17,6 +20,9 @@ export default class GroupChatButton extends Vue {
 </script>
 
 <style lang="scss" scoped>
+/**
+ * @author Sotaro Tomikawa
+ */
 .group-chat-button {
   height: 80px;
   border-bottom: 1px solid var(--border);

@@ -13,6 +13,9 @@ export default class BackButton extends Vue {
 </script>
 
 <style lang="scss" scoped>
+/**
+ * @author Sotaro Tomikawa
+ */
 .back-button {
   display: block;
   transform: rotate(-90deg);

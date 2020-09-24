@@ -5,6 +5,9 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Sotaro Tomikawa
+ */
 import { store } from '@/utils/store';
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
@@ -19,6 +22,9 @@ export default class CallButton extends Vue {
 </script>
 
 <style lang="scss" scoped>
+/**
+ * @author Sotaro Tomikawa
+ */
 .call-button {
   display: block;
 

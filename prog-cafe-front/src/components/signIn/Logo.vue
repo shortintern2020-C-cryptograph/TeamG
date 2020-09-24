@@ -14,6 +14,9 @@ export default class Logo extends Vue {
 </script>
 
 <style lang="scss" scoped>
+/**
+ * @author Sotaro Tomikawa
+ */
 .wrapper {
   position: absolute;
   top: 40%;

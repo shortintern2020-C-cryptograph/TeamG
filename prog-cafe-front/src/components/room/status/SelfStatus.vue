@@ -20,6 +20,9 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Kenya Sugimoto
+ */
 import { store } from '@/utils/store';
 import { Component, Vue } from 'vue-property-decorator';
 import { zeroPadding } from '@/utils/utils';
@@ -83,6 +86,9 @@ export default class SelfStatus extends Vue {
 </script>
 
 <style lang="scss" scoped>
+/**
+ * @author Sotaro Tomikawa
+ */
 .self-status {
   padding: 1em;
   padding-bottom: 0;

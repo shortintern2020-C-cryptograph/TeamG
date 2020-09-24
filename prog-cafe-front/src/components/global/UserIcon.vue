@@ -3,6 +3,9 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Kenya Sugimoto
+ */
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import { getAvatarIconUrl } from '@/utils/utils';
 
@@ -18,6 +21,9 @@ export default class UserIcon extends Vue {
 </script>
 
 <style lang="scss" scoped>
+/**
+ * @author Sotaro Tomikawa
+ */
 .user-icon {
   display: block;
   border-radius: 50%;

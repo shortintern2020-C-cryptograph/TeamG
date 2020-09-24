@@ -1,3 +1,6 @@
+/**
+ * @author Sotaro Tomikawa
+ */
 import { groupChatId } from './constants';
 
 export const getAvatarIconUrl = (githubId: string) => `https://avatars.githubusercontent.com/${githubId}`;
@@ -17,4 +20,7 @@ export const getGroupChatId = (roomId: string) => `${groupChatId}_${roomId}`;
  */
 export const zeroPadding = (num: number, len: number): string => (new Array(len).fill('0').join('') + num).slice(-len);
 
+/**
+ * @author Kenya Sugimoto
+ */
 export const exit = () => { window.location.href = '/'; };

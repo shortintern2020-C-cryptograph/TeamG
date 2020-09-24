@@ -1,3 +1,6 @@
+/**
+ * @author Sotaro Tomikawa
+ */
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
 import SignIn from '@/views/SignIn.vue';

@@ -8,6 +8,9 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Sotaro Tomikawa
+ */
 import { Component, Vue } from 'vue-property-decorator';
 import firebase from 'firebase/app';
 import { auth } from '@/utils/firebase';

@@ -7,6 +7,9 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Sotaro Tomikawa
+ */
 import { Component, Vue } from 'vue-property-decorator';
 import { exit } from '@/utils/utils';
 
@@ -19,6 +22,9 @@ export default class ExitButton extends Vue {
 </script>
 
 <style lang="scss" scoped>
+/**
+ * @author Sotaro Tomikawa
+ */
 .exit-button {
   padding: 1em;
   padding-bottom: 0;

@@ -6,6 +6,9 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Kenya Sugimoto
+ */
 import { Component, Vue } from 'vue-property-decorator';
 import Header from '@/components/global/header/Header.vue';
 import VirtualSpace from '@/components/room/virtualSpace/VirtualSpace.vue';
@@ -24,6 +27,9 @@ export default class Room extends Vue {
 </script>
 
 <style lang="scss" scoped>
+/**
+ * @author Sotaro Tomikawa
+ */
 .room {
   height: 90vh;
   display: grid;

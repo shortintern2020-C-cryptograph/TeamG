@@ -3,6 +3,9 @@
 </template>
 
 <style lang="scss" scoped>
+/**
+ * @author Sotaro Tomikawa
+ */
 .coffee {
   position: absolute;
   top: 30%;

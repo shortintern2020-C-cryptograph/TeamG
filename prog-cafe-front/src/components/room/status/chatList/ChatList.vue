@@ -29,6 +29,9 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Sotaro Tomikawa
+ */
 import { Component, Vue } from 'vue-property-decorator';
 import Chat from '@/components/room/status/chatList/chat/Chat.vue';
 import ChatListHeader from '@/components/room/status/chatList/ChatListHeader.vue';
@@ -71,6 +74,9 @@ export default class ChatList extends Vue {
 </script>
 
 <style lang="scss" scoped>
+/**
+ * @author Sotaro Tomikawa
+ */
 .chat-list {
   padding: 1em;
   position: relative;

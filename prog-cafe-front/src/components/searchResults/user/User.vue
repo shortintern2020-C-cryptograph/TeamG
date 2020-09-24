@@ -9,6 +9,9 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Yuka Okada
+ */
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import UserStatus from '@/components/global/UserStatus.vue';
 import FollowButton from '@/components/searchResults/user/FollowButton.vue';
@@ -37,6 +40,9 @@ export default class User extends Vue {
 }
 </script>
 <style scoped lang="scss">
+/**
+ * @author Sotaro Tomikawa
+ */
 .user {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);

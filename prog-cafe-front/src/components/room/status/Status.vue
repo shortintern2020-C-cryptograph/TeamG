@@ -17,6 +17,9 @@ import ExitButton from '@/components/room/status/ExitButton.vue';
 import ChatList from '@/components/room/status/chatList/ChatList.vue';
 import { store } from '@/utils/store';
 
+/**
+ * @author Sotaro Tomikawa
+ */
 @Component({
   components: {
     Capture,
@@ -34,6 +37,9 @@ export default class Status extends Vue {
 </script>
 
 <style lang="scss" scoped>
+/**
+ * @author Sotaro Tomikawa
+ */
 .status {
   display: grid;
 

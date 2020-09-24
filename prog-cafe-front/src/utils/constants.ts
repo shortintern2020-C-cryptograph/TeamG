@@ -1,3 +1,6 @@
+/**
+ * @author Sotaro Tomikawa
+ */
 export const endpoint = 'https://us-central1-progcafe.cloudfunctions.net';
 
 export const theme = {

@@ -10,6 +10,9 @@ export default class PC extends Vue {}
 </script>
 
 <style lang="scss" scoped>
+/**
+ * @author Sotaro Tomikawa
+ */
 .pc {
   position: absolute;
   top: 0;

@@ -1,15 +1,18 @@
 <template>
   <div class="user-profile">
-    <User :following="getFollowing" :name="targetId" :rank="rank" :online="online" />
+    <User :following="following" :name="targetId" :rank="rank" :online="online" />
     <div class="github-info">
       <GitHubSHIBA :githubId="targetId" />
-      <Techs :skills="getSkills" />
-      <Follower :name="getFollowingList" :followingList="getFollowingList" />
+      <Techs :skills="skills" />
+      <Follower :name="followingList" :followingList="followingList" />
     </div>
   </div>
 </template>
 
 <script lang="ts">
+/**
+ * @author Kenya Sugimoto
+ */
 import { Component, Vue, Watch } from 'vue-property-decorator';
 import User from '@/components/searchResults/user/User.vue';
 import GitHubSHIBA from '@/components/userProfile/GitHubSHIBA.vue';
@@ -38,15 +41,6 @@ export default class UserProfile extends Vue {
   }
   get selfId() {
     return store.githubId ?? '';
-  }
-  get getFollowing() {
-    return this.following;
-  }
-  get getSkills() {
-    return this.skills;
-  }
-  get getFollowingList() {
-    return this.followingList;
   }
 
   @Watch('targetId', { immediate: true })

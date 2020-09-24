@@ -8,6 +8,9 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Sotaro Tomikawa
+ */
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import TextField from '@/components/room/status/chatList/chat/content/form/TextField.vue';
 import SendButton from '@/components/room/status/chatList/chat/content/form/SendButton.vue';
@@ -33,6 +36,9 @@ export default class Form extends Vue {
 </script>
 
 <style lang="scss" scoped>
+/**
+ * @author Sotaro Tomikawa
+ */
 .form {
   display: grid;
   width: 100%;

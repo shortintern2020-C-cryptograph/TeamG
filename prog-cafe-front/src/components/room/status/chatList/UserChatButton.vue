@@ -8,6 +8,9 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Sotaro Tomikawa
+ */
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import UserIcon from '@/components/global/UserIcon.vue';
 import UserName from '@/components/global/UserName.vue';
@@ -24,6 +27,9 @@ export default class UserChatButton extends Vue {
 </script>
 
 <style lang="scss" scoped>
+/**
+ * @author Sotaro Tomikawa
+ */
 .user-chat-button {
   height: 80px;
   display: block;

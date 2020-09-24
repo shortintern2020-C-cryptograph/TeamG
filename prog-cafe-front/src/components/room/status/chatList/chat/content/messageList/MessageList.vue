@@ -9,6 +9,9 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Sotaro Tomikawa
+ */
 import {
   Component, Prop, Ref, Vue, Watch,
 } from 'vue-property-decorator';
@@ -37,6 +40,9 @@ export default class MessageList extends Vue {
 </script>
 
 <style lang="scss" scoped>
+/**
+ * @author Sotaro Tomikawa
+ */
 .message-list {
   width: 100%;
 

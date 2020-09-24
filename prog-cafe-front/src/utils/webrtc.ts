@@ -1,3 +1,6 @@
+/**
+ * @author Sotaro Tomikawa
+ */
 import { connection, defaultOptions } from '@open-ayame/ayame-web-sdk';
 import { isDevelopment } from './constants';
 

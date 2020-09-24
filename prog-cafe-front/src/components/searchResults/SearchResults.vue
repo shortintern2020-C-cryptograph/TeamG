@@ -12,6 +12,9 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Kenya Sugimoto
+ */
 import { Component, Vue } from 'vue-property-decorator';
 import User from '@/components/searchResults/user/User.vue';
 import { store } from '@/utils/store';
@@ -23,17 +26,9 @@ import { store } from '@/utils/store';
 })
 export default class SearchResults extends Vue {
   get searchResults() {
-    if (store.searchResults) {
-      const resultList = Object.entries(store.searchResults).map(([name, result]) => {
-        const temp = {
-          name,
-          result,
-        };
-        return temp;
-      });
-      return resultList;
-    }
-    return null;
+    return store.searchResults
+      ? Object.entries(store.searchResults).map(([name, result]) => ({ name, result }))
+      : null;
   }
 }
 </script>
