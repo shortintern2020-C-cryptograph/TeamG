@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WS tester</title>
+</head>
+<body>
+  <form id="connect">
+    WS URL <input type="text" id="wsurl"> <input type="submit" value="connect">
+  </form>
+  <form id="send">
+    <table>
+      <tbody>
+        <tr>
+          <td><input type="text" class="key"></td>
+          <td><input type="text" class="value"></td>
+        </tr>
+        <tr>
+          <td><input type="text" class="key"></td>
+          <td><input type="text" class="value"></td>
+        </tr>
+        <tr>
+          <td><input type="text" class="key"></td>
+          <td><input type="text" class="value"></td>
+        </tr>
+        <tr>
+          <td><input type="text" class="key"></td>
+          <td><input type="text" class="value"></td>
+        </tr>
+        <tr>
+          <td><input type="text" class="key"></td>
+          <td><input type="text" class="value"></td>
+        </tr>
+        <tr>
+          <td><input type="text" class="key"></td>
+          <td><input type="text" class="value"></td>
+        </tr>
+        <tr>
+          <td><input type="text" class="key"></td>
+          <td><input type="text" class="value"></td>
+        </tr>
+      </tbody>
+    </table>
+    <input type="submit" value="send">
+  </form>
+  <textarea id="log" cols="30" rows="10"></textarea>
+  <script>
+    let ws;
+    (() => {
+      document.querySelector('#wsurl').value = 'wss://prog-cafe.herokuapp.com';
+      const logger = console.log;
+      console.log = (...data) => {
+        document.getElementById('log').value += JSON.stringify(...data) + '\n';
+        logger(...data);
+      };
+    })();
+    document.querySelector('#connect').addEventListener('submit', e => {
+      e.preventDefault();
+      ws = new WebSocket(new URL(document.querySelector('#wsurl').value).href);
+      ws.addEventListener('open', console.log);
+      ws.addEventListener('close', console.warn);
+      ws.addEventListener('error', console.error);
+      ws.addEventListener('message', console.log);
+    })
+    document.querySelector('#send').addEventListener('submit', e => {
+      e.preventDefault();
+      if (!ws) return;
+      const data = {};
+      const keys = [...document.querySelectorAll('.key').values()].map(el => el.value);
+      const values = [...document.querySelectorAll('.value').values()].map(el => el.value);
+      keys.forEach((key, i) => {
+        if (!key) return;
+        data[key] = values[i];
+      });
+      console.log(data);
+      ws.send(JSON.stringify(data));
+    });
+  </script>
+</body>
+</html>
