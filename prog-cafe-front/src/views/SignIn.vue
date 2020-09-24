@@ -6,6 +6,9 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Sotaro Tomikawa
+ */
 import { Component, Vue } from 'vue-property-decorator';
 import Logo from '@/components/signIn/Logo.vue';
 import SignInButton from '@/components/signIn/SignInButton.vue';
