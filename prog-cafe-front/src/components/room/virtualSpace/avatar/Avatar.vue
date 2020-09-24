@@ -12,6 +12,9 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Kenya Sugimoto
+ */
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import AvatarIcon from '@/components/room/virtualSpace/avatar/AvatarIcon.vue';
 import Fire from '@/components/room/virtualSpace/avatar/Fire.vue';
@@ -43,6 +46,9 @@ export default class Avatar extends Vue {
       : 0;
   }
 
+  /**
+   * @author Sotaro Tomikawa
+   */
   get isBreaking() {
     return store.userStatus[this.userId]
       ? store.userStatus[this.userId] === 'Breaking'

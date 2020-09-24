@@ -9,6 +9,9 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Sotaro Tomikawa
+ */
 import { Component, Ref, Vue } from 'vue-property-decorator';
 
 @Component

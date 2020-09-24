@@ -9,6 +9,9 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Sotaro Tomikawa
+ */
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
@@ -18,6 +21,9 @@ export default class Fire extends Vue {
 </script>
 
 <style lang="scss" scoped>
+/**
+ * @author Sotaro Tomikawa
+ */
 .fire {
   position: absolute;
   bottom: 0;

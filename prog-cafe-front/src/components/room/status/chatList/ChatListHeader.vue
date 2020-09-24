@@ -7,6 +7,9 @@
 </template>
 
 <style lang="scss" scoped>
+/**
+ * @author Sotaro Tomikawa
+ */
 .chat-list-header {
   display: grid;
   background: var(--main);

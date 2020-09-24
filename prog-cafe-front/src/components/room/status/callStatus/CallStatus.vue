@@ -22,6 +22,9 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Sotaro Tomikawa
+ */
 import { Component, Ref, Vue } from 'vue-property-decorator';
 import UserIcon from '@/components/global/UserIcon.vue';
 import { store } from '@/utils/store';
@@ -67,6 +70,9 @@ export default class CallStatus extends Vue {
 </script>
 
 <style lang="scss" scoped>
+/**
+ * @author Sotaro Tomikawa
+ */
 .call-status {
   position: relative;
   padding: 1em;
