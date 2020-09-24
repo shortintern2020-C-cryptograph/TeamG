@@ -16,6 +16,9 @@ export default class InviteButton extends Vue {
 </script>
 
 <style scoped>
+/**
+ * @author Yuka Okada
+ */
 button{
   display: flex;
   background-color: var(--background);

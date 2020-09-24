@@ -12,6 +12,9 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Sotaro Tomikawa
+ */
 import { follow } from '@/utils/http';
 import { store } from '@/utils/store';
 import { Component, Prop, Vue } from 'vue-property-decorator';
@@ -39,6 +42,9 @@ export default class FollowButton extends Vue {
 </script>
 
 <style lang="scss" scoped>
+/**
+ * @author Yuka Okada
+ */
 .follow {
   button {
     display: flex;
