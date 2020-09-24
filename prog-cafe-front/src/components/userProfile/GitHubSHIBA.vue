@@ -8,12 +8,14 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Kenya Sugimoto
+ */
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import { getShibaImageUrl } from '@/utils/utils';
 
 @Component
 export default class GitHubSHIBA extends Vue {
-  // eslint-disable-next-line
   get shibaUrl() {
     if (this.githubId != null) return getShibaImageUrl(this.githubId);
     return null;

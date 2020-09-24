@@ -8,6 +8,9 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Kenya Sugimoto
+ */
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import UserStatus from '@/components/global/UserStatus.vue';
 
