@@ -11,6 +11,9 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Sotaro Tomikawa
+ */
 import { Component, Vue } from 'vue-property-decorator';
 import { search } from '@/utils/http';
 import { store } from '@/utils/store';
@@ -19,6 +22,9 @@ import { store } from '@/utils/store';
 export default class SearchBox extends Vue {
   searchText = ''
 
+  /**
+   * @author Kenya Sugimoto
+   */
   get selfUserName() {
     return store.githubId ?? '';
   }
@@ -44,6 +50,9 @@ export default class SearchBox extends Vue {
 </script>
 
 <style lang="scss" scoped>
+/**
+ * @author Sotaro Tomikawa
+ */
 .search-box {
   position: relative;
   img {

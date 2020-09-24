@@ -10,6 +10,9 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Kenya Sugimoto
+ */
 import { Component, Vue } from 'vue-property-decorator';
 import SearchBox from '@/components/global/header/SearchBox.vue';
 import SelfUserStatus from '@/components/global/header/SelfUserStatus.vue';
@@ -29,6 +32,9 @@ export default class Header extends Vue {
 </script>
 
 <style lang="scss" scoped>
+/**
+ * @author Sotaro Tomikawa
+ */
 header {
   width: 100vw;
   height: 10vh;

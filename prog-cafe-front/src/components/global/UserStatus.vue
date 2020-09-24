@@ -15,6 +15,9 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 import UserIcon from '@/components/global/UserIcon.vue';
 import UserName from '@/components/global/UserName.vue';
 
+/**
+ * @author Sotaro Tomikawa
+ */
 @Component({
   components: {
     UserIcon,
@@ -30,6 +33,9 @@ export default class UserStatus extends Vue {
     return this.online != null;
   }
 
+  /**
+   * @author Kenya Sugimoto
+   */
   toUserProfile(name: string) {
     if (this.$route.name !== 'User') this.$router.push({ name: 'User', params: { userId: name } });
     else if (this.$route.params.userId !== name) {
@@ -40,6 +46,9 @@ export default class UserStatus extends Vue {
 </script>
 
 <style lang="scss" scoped>
+/**
+ * @author Sotaro Tomikawa
+ */
 .user-status {
   display: grid;
   grid-template-columns: 10em minmax(0, 1fr);

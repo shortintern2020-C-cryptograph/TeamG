@@ -7,6 +7,9 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Sotaro Tomikawa
+ */
 import { store } from '@/utils/store';
 import { Component, Vue } from 'vue-property-decorator';
 
