@@ -18,6 +18,9 @@ export default class Tech extends Vue {
 </script>
 
 <style lang="scss" scoped>
+/**
+ * @author Ryoya Wakuda
+ */
   .tech {
     display: inline-flex;
     justify-content: center;

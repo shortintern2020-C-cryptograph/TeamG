@@ -13,6 +13,9 @@
   width: 4em;
   transform: translateY(-50%);
 }
+/**
+ * @author Ryoya Wakuda
+ */
 /* vendor prefix for Safari */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   _::-webkit-full-page-media, _:future, :root .coffee {

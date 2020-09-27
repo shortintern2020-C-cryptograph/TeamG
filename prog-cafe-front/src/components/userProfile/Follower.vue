@@ -32,6 +32,9 @@ export default class Follower extends Vue {
 </script>
 
 <style lang="scss" scoped>
+/**
+ * @author Ryoya Wakuda
+ */
   .followers {
     margin-top: 80px;
     h4 {

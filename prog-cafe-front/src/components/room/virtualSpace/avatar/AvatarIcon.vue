@@ -17,6 +17,9 @@
 </template>
 
 <script lang="ts">
+/**
+ * @author Ryoya Wakuda
+ */
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import UserIcon from '@/components/global/UserIcon.vue';
 

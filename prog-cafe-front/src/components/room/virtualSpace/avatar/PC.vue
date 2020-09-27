@@ -19,6 +19,9 @@ export default class PC extends Vue {}
   left: 0;
   width: 100%;
 }
+/**
+ * @author Ryoya Wakuda
+ */
 /* vendor prefix for Safari */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   _::-webkit-full-page-media, _:future, :root .pc {

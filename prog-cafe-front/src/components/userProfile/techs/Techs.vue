@@ -30,6 +30,9 @@ export default class Techs extends Vue {
 </script>
 
 <style lang="scss" scoped>
+/**
+ * @author Ryoya Wakuda
+ */
   .techs {
     margin-top: 80px;
     h4 {
