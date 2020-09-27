@@ -52,6 +52,9 @@ export default class VirtualSpace extends Vue {
     }
   }
 }
+/**
+ * @author Ryoya Wakuda
+ */
 /* vendor prefix for Safari */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   _::-webkit-full-page-media, _:future, :root .avatars:nth-child(n+4) {

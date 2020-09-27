@@ -59,6 +59,9 @@ export default class UserProfile extends Vue {
 </script>
 
 <style lang="scss" scoped>
+/**
+ * @author Ryoya Wakuda
+ */
   .user-profile {
     width: 90vw;
     background: var(--background);
